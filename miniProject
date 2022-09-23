@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #a {
+            grid-area: A;
+        }
+
+        #b {
+            grid-area: B;
+        }
+
+        #c {
+            grid-area: C;
+        }
+
+        #d {
+            grid-area: D;
+        }
+
+        #e {
+            grid-area: E;
+        }
+
+        #f {
+            grid-area: F;
+        }
+
+        #g {
+            grid-area: G;
+        }
+
+        body {
+            padding-top: 60px;
+            background-color: blanchedalmond;
+            background-attachment: scroll;
+        }
+
+        #Header {
+            top: 0px;
+            position: fixed;
+            left: 0px;
+            width: 100%;
+            background-color: darkgoldenrod;
+            padding-top: 20px;
+            margin-top: 0px;
+            color: white;
+            height: 60px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        #Footer {
+            bottom: 0px;
+            position: fixed;
+            background-color: green;
+            color: white;
+            height: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 0px;
+            width: 100%;
+            left: 0px;
+
+        }
+
+        .row {
+            padding-top: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: "A A B B C C""D D E E F F";
+            background-attachment: scroll;
+        }
+
+        .audio {
+            margin-bottom: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="Header">Historical Places In India</h1>
+
+    <div class="container" align="center">
+        <a id="a" href="https://en.wikipedia.org/wiki/Taj_Mahal">
+            <image src="images/taj_mahal_at_night.jpg" style="height:250px;width:400px;margin:20px"></image>
+        </a>
+
+        <a id="b" href="https://en.wikipedia.org/wiki/Red_Fort">
+            <image src="images/lalkilla.jpg" style="height:250px;width:400px;margin:20px"></image>
+        </a>
+
+        <a id="c" href="https://en.wikipedia.org/wiki/Qutb_Minar">
+            <image src="images/Qutub-Minar.jpg" style="height:250px;width:400px;margin:20px"></image>
+        </a>
+
+        <a id="d" href="https://en.wikipedia.org/wiki/Hawa_Mahal">
+            <image src="images/hawamahal.png" style="height:250px;width:400px;margin:20px"></image>
+        </a>
+
+        <a id="e" href="https://en.wikipedia.org/wiki/India_Gate">
+            <image src="images/istockphoto-472225853-170667a.jpg" style="height:250px;width:400px;margin:20px"></image>
+        </a>
+
+        <a id="f" href="https://en.wikipedia.org/wiki/Victoria_Memorial,_Kolkata">
+            <image src="images/victoria memorial.jpg" style="height:250px;width:400px;margin:20px"></image>
+        </a>
+
+    </div>
+    <div class="audio">
+        <audio style="margin-left: 630px;" src="OurNationalAnthemAudio.mp3" controls></audio>
+    </div>
+
+    <div id="Footer" class="row">
+        <div class="col-mb-5">Thank You</div>
+        <div class="col-mb-7">Designed And Developed By Ritik Vaidya</div>
+    </div>
+
+</body>
+
+</html>
